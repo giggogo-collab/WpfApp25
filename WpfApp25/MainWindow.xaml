@@ -1,0 +1,62 @@
+﻿<Window x:Class="PracticalWork4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Практическая работа №4" Height="500" Width="800"
+        ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="10">
+            <TextBlock Text="Первая пара:" Margin="0,5"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="первое число (рубли):" VerticalAlignment="Center"/>
+                <TextBox x:Name="tbPervoe1" Width="60" Margin="5" Text="1"/>
+                <TextBlock Text="второе число (копейки):" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                <TextBox x:Name="tbVtoroe1" Width="60" Margin="5" Text="2"/>
+            </StackPanel>
+
+            <TextBlock Text="Вторая пара:" Margin="0,5"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="первое число (рубли):" VerticalAlignment="Center"/>
+                <TextBox x:Name="tbPervoe2" Width="60" Margin="5" Text="3"/>
+                <TextBlock Text="второе число (копейки):" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                <TextBox x:Name="tbVtoroe2" Width="60" Margin="5" Text="4"/>
+            </StackPanel>
+
+            <TextBlock Text="Третья пара:" Margin="0,5"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="первое число:" VerticalAlignment="Center"/>
+                <TextBox x:Name="tbPervoe3" Width="60" Margin="5" Text="5"/>
+                <TextBlock Text="второе число:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                <TextBox x:Name="tbVtoroe3" Width="60" Margin="5" Text="6"/>
+            </StackPanel>
+
+            <TextBlock Text="Результат:" Margin="0,10,0,5"/>
+            <TextBox x:Name="tbResultat" Height="80" IsReadOnly="True"
+                     TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="btnSumdeneg" Content="Сумма денег" Width="100" Margin="5" Click="btnSummaDeheg_Click"/>
+            <Button x:Name="btnRaznitsadeneg" Content="Разница денег" Width="100" Margin="5" Click="btnRaznitsaDeneg_Click"/>
+            <TextBlock Text="Делитель:" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbDelitel" Width="60" Margin="5" Text="2"/>
+            <Button x:Name="btnDelenieDeneg" Content="Деление денег" Width="100" Margin="5" Click="btnDelinieDeneg_Click"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="btnSumPolei" Content="Сумма полей" Width="100" Margin="5" Click="btnSumPolei_Click"/>
+            <Button x:Name="btnDobavitpary" Content="Сложить пары" Width="100" Margin="5" Click="btnDobavitpary_Click"/>
+            <Button x:Name="btnYvelichitna1" Content="Увеличить на 1" Width="100" Margin="5" Click="btnYvelichitna1_Click"/>
+            <Button x:Name="btnYmenshitna1" Content="Уменьшить на 1" Width="100" Margin="5" Click="btnYmenshitna1_Click"/>
+            <Button x:Name="btnSummaTreh" Content="Сложить 3 пары" Width="110" Margin="5" Click="btnSummaTreh_Click"/>
+            <Button x:Name="btnOproge" Content="О программе" Width="100" Margin="5" Click="btnbtnOproge_Click"/>
+            <Button x:Name="btnVihod" Content="Выход" Width="80" Margin="5" Click="btnVihod_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
